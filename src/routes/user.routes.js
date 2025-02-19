@@ -7,7 +7,8 @@ const router = Router()
 router.route("/register").post(
     upload.fields([
         {
-            name: "avatar",
+            name: "avatar",  // hmlog 2do file ko accept kar rahe hai aavatar aur coverimage, aur hmlog ye dono file kis                          name                  janenga                wo likh ha yaha a
+                             // aur kittne  accept karenge filr usska count given ha yaha pe
             maxCount: 1
         },
         {
@@ -15,5 +16,6 @@ router.route("/register").post(
             maxCount: 1
         }]
     ),
+    
     registerUser)
 export default router
